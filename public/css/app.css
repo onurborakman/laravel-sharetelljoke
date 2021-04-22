@@ -1,0 +1,380 @@
+/*
+Onur Akman
+CST-323
+01/10/2021
+I used source code from the following websites to complete this assignment:
+http://meyerweb.com/eric/tools/css/reset/
+I used the source code on this website to reset my styles for the application (CSS Reset)
+Rest of the work is my own work on this page (Under "End of CSS Reset" comment)
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* END OF CSS RESET */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+    font-style: oblique;
+    font-size: 10px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+#brand {
+    display: flex;
+    justify-content: center;
+    font-size: 4.5em;
+    margin: 40px 0px 20px 0px;
+}
+
+#navbar-list {
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    padding: 25px 0px;
+}
+
+a,
+li {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+a:hover,
+li:hover {
+    color: rgb(0, 0, 0);
+}
+
+a:active,
+li:active {
+    color: rgb(45, 45, 45);
+}
+
+.container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-self: center;
+    padding: 30px 0px 15px 0px;
+}
+
+form input,
+form textarea {
+    padding: 12px 20px;
+    width: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
+form textarea {
+    width: 100%;
+    font-size: 16px;
+    height: 150px;
+    resize: none;
+}
+
+form label {
+    display: inline-block;
+}
+
+.result {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.joke {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 100px;
+}
+
+#title {
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    padding: 35px 35px 0px 35px;
+    word-break: break-all;
+}
+
+#content {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+    padding: 35px;
+    word-break: break-all;
+}
+
+#author {
+    padding-right: 35px;
+}
+
+#time {
+    padding-left: 35px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+#main-content {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-content h2 {
+    font-size: 2.5em;
+    padding: 35px 35px 0px 35px;
+    word-break: break-all;
+    margin-bottom: 15px;
+}
+
+#main-content p {
+    font-size: 1.7em;
+    padding: 35px;
+    word-break: break-all;
+}
+
+label{
+    font-size: 1.7em;
+}
+
+@media (max-width: 600px){
+    #brand{
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 550px){
+    #brand{
+        font-size: 3.5em;
+    }
+}
+@media (max-width: 500px){
+    #brand{
+        font-size: 3em;
+    }
+}
+@media (max-width: 450px){
+    #brand{
+        font-size: 0em;
+        margin: 0px 0px 0px 0px;
+    }
+    #navbar{
+        top: 0;
+    }
+}
+
+@media (max-width: 310px) {
+    #navbar-list{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #navbar-list li{
+        padding: 5px;
+    }
+    #time, #author {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 250px){
+    .result{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 150px){
+    .result{
+        font-size: 1em;
+    }
+}
+
+/* Bootstrap Customization */
+
+.form-control:focus {
+    border-color: rgba(0,0,0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
+}
